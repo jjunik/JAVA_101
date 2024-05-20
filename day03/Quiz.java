@@ -43,16 +43,21 @@ public class Quiz {
         Scanner sc = new Scanner(System.in);
         System.out.println("이메일을 입력하세요");
         String email = sc.next();
-        email.contains("@");
-        email.contains(".");
-        email.contains("naver");
-        email.contains("gmail");
-        String result = true
+        String result = email.contains("naver") || email.contains("gmaill") ? " 이상없음" : " 재확인";
+        String result2 = email.contains("@") && email.contains(".") ? " 이상없음" : " 재확인";
+        System.out.println("메일주소" + result);
+        System.out.println("@ , ." + result2);
 
 
 
 
         //2. 과일 이름을 입력 받고, 6글자 이하이면 대문자화하고 이상이면 3글자만 나타내기
+
+        System.out.println("과일이름을 입력하세요.");
+        String fruit = sc.next();
+        String name = fruit.length() <= 6 ? fruit.toUpperCase() : fruit.substring(0,3);
+        System.out.println(name);
+
 
 
 

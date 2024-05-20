@@ -20,12 +20,11 @@ public class StringADV {
         // icecream.replaceAll("a","b") a를 b로 모두 바꿔줌
         // icecream.startsWith("choco") "choco"로 시작하니? true / false
 
-        Scanner sc = new Scanner(System.in)
+        Scanner sc = new Scanner(System.in);
         System.out.println("비밀번호를 설정");
         String password = sc.next();
         String result = password.length() >= 8 && password.contains("!") ? "비밀번호 설정완료" : "비밀번호 다시 설정";
 
-        String pass =
 
 
     }
